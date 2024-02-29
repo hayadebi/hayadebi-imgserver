@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580681132492",
+    "project_id": "dshop-54846",
+    "storage_bucket": "dshop-54846.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580681132492:android:f2346ef16f9367f15e1569",
+        "android_client_info": {
+          "package_name": "com.HAYADEBI.IndieConnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArgL9clH29fHrB_uMqzXL-x6XxWNr9CnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
