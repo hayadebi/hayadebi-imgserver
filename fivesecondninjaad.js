@@ -2,12 +2,10 @@ let　adDisplayed　=　false;
 let　adClosed　=　false;
 var　url　=　location.href;
 
-//　スマホかどうかを判定
 function　isMobile()　{
 　　　　return　window.innerWidth　<=　600;
 }
 
-//　ページのスクロール監視
 window.addEventListener("scroll",　function()　{
 　　　　if　(url.indexOf("cms.e.jimdo.com")　===　-1){
 　　　　　　　　if　(adDisplayed　||　adClosed)　return;
@@ -65,7 +63,6 @@ function　closeAd()　{
 　　　　　　　　enableScroll();
 　　　　　　　　adClosed　=　true;
 　　　　　　　　
-　　　　　　　　//　スクロール位置をページの半分に設定
 　　　　　　　　let　pageHeight　=　document.body.scrollHeight;
 　　　　　　　　window.scrollTo({　top:　pageHeight　/　2,　behavior:　"smooth"　});
 　　　　}
