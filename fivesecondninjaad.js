@@ -67,7 +67,6 @@ function　closeAd()　{
 　　　　　　　　window.scrollTo({　top:　pageHeight　/　2,　behavior:　"smooth"　});
 　　　　}
 }
-
 function　disableScroll()　{
 　　　　document.body.style.overflow　=　"hidden";
 　　　　document.body.style.height　=　"100%";
