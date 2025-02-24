@@ -1,0 +1,18 @@
+﻿function generateAdCode() {
+    const adCode = document.getElementById('adCodeInput').value;
+    if (!adCode.includes('<!-- admax -->') || adCode.includes('<script>')) {
+        alert('正しい忍者AdMaxの広告コードを入力してください。');
+        return;
+    }
+
+    const template = `<div id=\"adOverlay\" style=\"display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; z-index: 1000;\"> <div id=\"adContainer\" style=\"position: relative; width: 300px; height: 250px; text-align: center;\"> <p id=\"countdown\" style=\"color: white; font-size: 14px;\">5 seconds until you can close the ad</p> <div id=\"adContent\" width=\"100%\" height=\"auto\" style=\"width:100%; height:auto;\">${adCode}</div> <div id=\"closeButton\" style=\"display: none; position: absolute; top: 30px; right: 16px; cursor: pointer; background: red; color: white; width: 12px; height: 12px; text-align: center; border-radius: 50%; font-size: 9px; line-height: 12px;\">✕</div> </div> </div> <script defer> let adDisplayed = false; let adClosed = false; var url = location.href; function isMobile() { return window.innerWidth <= 600; } window.addEventListener(\"scroll\", function() { if (url.indexOf(\"cms.e.jimdo.com\") === -1) { if (adDisplayed || adClosed) return; let scrollPosition = window.scrollY + window.innerHeight; let pageHeight = document.body.scrollHeight; if (scrollPosition >= pageHeight / 2) { adDisplayed = true; showAd(); } } }); function showAd() { if (url.indexOf(\"cms.e.jimdo.com\") === -1) { let adContainer = document.getElementById(\"adContainer\"); let closeButton = document.getElementById(\"closeButton\"); if (isMobile()) { adContainer.style.width = \"90%\"; closeButton.style.top = \"8px\"; closeButton.style.right = \"8px\"; } else { adContainer.style.width = \"300px\"; closeButton.style.top = \"30px\"; closeButton.style.right = \"16px\"; } document.getElementById(\"adOverlay\").style.display = \"flex\"; disableScroll(); startCountdown(); } } function startCountdown() { let timeLeft = 5; let countdownInterval = setInterval(() => { document.getElementById(\"countdown\").innerText = `${ timeLeft } seconds until you can close the ad`; if (timeLeft === 0) { clearInterval(countdownInterval); document.getElementById(\"closeButton\").style.display = \"block\"; document.getElementById(\"countdown\").innerText = \"You can now close the ad\"; } timeLeft--; }, 1000); document.getElementById(\"closeButton\").addEventListener(\"click\", closeAd); } function closeAd() { document.getElementById(\"adOverlay\").style.display = \"none\"; enableScroll(); adClosed = true; let pageHeight = document.body.scrollHeight; window.scrollTo({ top: pageHeight / 2, behavior: \"smooth\" }); } function disableScroll() { document.body.style.overflow = \"hidden\"; document.body.style.height = \"100%\"; document.documentElement.style.overflow = \"hidden\"; document.documentElement.style.height = \"100%\"; } function enableScroll() { document.body.style.overflow = \"auto\"; document.body.style.height = \"auto\"; document.documentElement.style.overflow = \"auto\"; document.documentElement.style.height = \"auto\"; } <\/script>`;
+
+    document.getElementById('outputCode').value = template;
+}
+
+function copyToClipboard() {
+    const text = document.getElementById('outputCode');
+    text.select();
+    document.execCommand('copy');
+    alert('コードがコピーされました！');
+}
