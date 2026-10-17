@@ -1,0 +1,68 @@
+<a class="skip-link" href="#main-content">本文へ移動</a>
+<header class="site-header">
+  <div class="header-inner">
+  <a class="brand" href="#/" aria-label="あくまでミニアーケードのトップへ">
+      <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 44 44" role="img" focusable="false">
+        <rect x="3" y="5" width="38" height="32" rx="9" fill="none" stroke="currentColor" stroke-width="2.5" />
+        <rect x="10" y="12" width="24" height="13" rx="3" fill="currentColor" opacity=".22" />
+        <circle cx="16" cy="18.5" r="2.3" fill="currentColor" />
+        <circle cx="23" cy="18.5" r="2.3" fill="currentColor" opacity=".72" />
+        <path d="M14 31h6M24 31h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      </svg>
+      </span>
+      <span class="brand-copy">
+      <span class="brand-kicker">BREAK / PLAY / RESET</span>
+      <span class="brand-name">あくまでミニアーケード</span>
+      </span>
+  </a>
+  <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#/" data-nav="catalog">カタログ</a>
+      <a href="#/favorites" data-nav="favorites">お気に入り <span class="nav-count" data-favorite-count>0</span></a>
+      <a href="#/recent" data-nav="recent">最近遊んだゲーム</a>
+      <a href="../../tools.html" target="_blank" alt="ツール工房" data-nav="recent">その他運営サービス</a>
+  </nav>
+  </div>
+</header>
+<div id="multilang"></div>
+<script src="https://unpkg.com/google-translate-pure-js/js/multilang.js" defer></script>
+<script src="pagelang.js"></script>
+<main id="main-content" class="site-main">
+  <section id="app-view" aria-live="polite" aria-busy="true">
+    <div class="loading-panel">
+      <span class="loader" aria-hidden="true"></span>
+      <p>ゲームセンターを準備しています。</p>
+    </div>
+    <noscript><div class="message-panel message-panel-error">
+      <h1>JavaScriptを有効にしてください</h1>
+      <p>このサービスでは、ゲームカタログの検索とPlaygamaゲームの起動に標準JavaScriptを使用します。</p>
+    </div></noscript>
+  </section>
+  <div id="widget-playgama">
+    <div style="opacity: 0.2;font-family: sans-serif;font-size: 10px">Powered by <a href="https://playgama.com/" target="_blank" rel="noopener">Playgama</a></div>
+  </div>
+</main>
+<div style="width:100%;max-width:100%;height:auto;margin-bottom:12px;overflow-x: hidden;">
+  <script src="dlsite.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://www.dlsite.com/js/blogparts.js" charset="UTF-8"></script>
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">あくまでミニアーケードゲームセンター</p>
+      <p class="footer-note">仕事・勉強・制作の合間に、次の1本を見つけるための小さなゲームポータル。</p>
+    </div>
+    <div class="footer-links" aria-label="フッターナビゲーション">
+      <a href="#/">ゲーム一覧</a><a href="#/favorites">お気に入り</a><a href="#/recent">最近遊んだゲーム</a><a href="../../tools.html" target="_blank">その他運営サービス</a>
+    </div>
+    <p class="footer-privacy">※本サービス及び通知にはPRも含まれます/ <a href="../../sitemap.html" target="_blank">サイトマップ</a>・<a href="../../notation.html" target="_blank">運営上必要表記</a></p>
+  </div>
+</footer>
+<div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+<p id="sr-status" class="sr-only" aria-live="polite"></p>
+<div class="centerad-widget"></div>
+<script src="../../Ads/ToolCenterAds.js" rel="preload"></script>
+<script src="../../Ads/ShowAds.js" defer="defer"></script>
+<script src="../../Ads/ToolAds.js" defer="preload"></script>
+<script src="app-core.js" defer></script>
+<script src="app-ui.js" defer></script>
