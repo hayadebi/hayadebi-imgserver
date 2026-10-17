@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">あくまでミニアーケードゲームセンター</p>
+      <p class="footer-note">仕事・勉強・制作の合間に、次の1本を見つけるための小さなゲームポータル。</p>
+    </div>
+    <div class="footer-links" aria-label="フッターナビゲーション">
+      <a href="#/">ゲーム一覧</a><a href="#/favorites">お気に入り</a><a href="#/recent">最近遊んだゲーム</a><a href="../../tools.html" target="_blank">その他運営サービス</a>
+    </div>
+    <p class="footer-privacy">※本サービス及び通知にはPRも含まれます/ <a href="../../sitemap.html" target="_blank">サイトマップ</a>・<a href="../../notation.html" target="_blank">運営上必要表記</a></p>
+  </div>
+</footer>

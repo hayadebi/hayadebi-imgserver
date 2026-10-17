@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="header-inner">
+  <a class="brand" href="#/" aria-label="あくまでミニアーケードのトップへ">
+      <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 44 44" role="img" focusable="false">
+        <rect x="3" y="5" width="38" height="32" rx="9" fill="none" stroke="currentColor" stroke-width="2.5" />
+        <rect x="10" y="12" width="24" height="13" rx="3" fill="currentColor" opacity=".22" />
+        <circle cx="16" cy="18.5" r="2.3" fill="currentColor" />
+        <circle cx="23" cy="18.5" r="2.3" fill="currentColor" opacity=".72" />
+        <path d="M14 31h6M24 31h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      </svg>
+      </span>
+      <span class="brand-copy">
+      <span class="brand-kicker">BREAK / PLAY / RESET</span>
+      <span class="brand-name">あくまでミニアーケード</span>
+      </span>
+  </a>
+  <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#/" data-nav="catalog">カタログ</a>
+      <a href="#/favorites" data-nav="favorites">お気に入り <span class="nav-count" data-favorite-count>0</span></a>
+      <a href="#/recent" data-nav="recent">最近遊んだゲーム</a>
+      <a href="../../tools.html" target="_blank" alt="ツール工房" data-nav="recent">その他運営サービス</a>
+  </nav>
+  </div>
+</header>

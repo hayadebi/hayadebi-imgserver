@@ -1,0 +1,15 @@
+<main id="main-content" class="site-main">
+  <section id="app-view" aria-live="polite" aria-busy="true">
+    <div class="loading-panel">
+      <span class="loader" aria-hidden="true"></span>
+      <p>ゲームセンターを準備しています。</p>
+    </div>
+    <noscript><div class="message-panel message-panel-error">
+      <h1>JavaScriptを有効にしてください</h1>
+      <p>このサービスでは、ゲームカタログの検索とPlaygamaゲームの起動に標準JavaScriptを使用します。</p>
+    </div></noscript>
+  </section>
+  <div id="widget-playgama">
+    <div style="opacity: 0.2;font-family: sans-serif;font-size: 10px">Powered by <a href="https://playgama.com/" target="_blank" rel="noopener">Playgama</a></div>
+  </div>
+</main>
